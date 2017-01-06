@@ -1,20 +1,9 @@
-## Date: 2017-01-06 星期五
+# coding: utf-8
 
-------
+"""
+Remove the files from folder
+"""
 
-今天需要完成的任务:
-
-- [ ] Redux
-- [x] Python 删除文件研究 - 到底是彻底删除 还是 进了回收站（硬盘容量问题）
-
-### Python 删除文件研究
-
-
-使用　shutil.rmtree 基本可以满足要求，　就是它连顶层folder 也删除了，不过不要紧，差不多就行了
-
-而且是彻底删除，所以使用一定要 *谨慎* ,不是进回收站还能返回的节奏哦
-
-```python
 import os, stat
 import shutil
 
@@ -37,6 +26,3 @@ if __name__ == '__main__':
     except Exception as e:
         print(type(e))
         print(e)
-```
-
-### Redux
